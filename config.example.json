@@ -1,0 +1,47 @@
+{
+  "sessionsRoot": "/Users/you/Sora/sessions",
+  "chromeExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "chromeUserDataDir": "/Users/you/Library/Application Support/Google/Chrome",
+  "chromeActiveProfileName": "Default",
+  "cdpPort": 9222,
+  "promptDelayMs": 2000,
+  "draftTimeoutMs": 60000,
+  "downloadTimeoutMs": 300000,
+  "maxParallelSessions": 2,
+  "ffmpegPath": null,
+  "automator": {
+    "dryRun": false,
+    "downloadLimit": 10
+  },
+  "cleanup": {
+    "enabled": true,
+    "dryRun": false,
+    "retentionDaysDownloads": 14,
+    "retentionDaysBlurred": 30,
+    "retentionDaysTemp": 3
+  },
+  "telegram": {
+    "enabled": false,
+    "botToken": null,
+    "chatId": null
+  },
+  "watermarkDefaults": {
+    "watermark_mode": "hybrid",
+    "x": 50,
+    "y": 50,
+    "w": 200,
+    "h": 100,
+    "blur_strength": 24,
+    "band": 6
+  },
+  "watermarkMasks": [
+    {
+      "id": "example",
+      "name": "Lower-right logo",
+      "rects": [
+        { "x": 1280, "y": 640, "width": 320, "height": 180, "label": "Logo", "mode": "hybrid", "blur_strength": 20, "band": 6 }
+      ]
+    }
+  ],
+  "activeWatermarkMaskId": null
+}
