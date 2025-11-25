@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["electron", "src", "shared", "core", "platform", "config", "vite.config.ts"],
+  "exclude": ["dist-electron"]
+}
