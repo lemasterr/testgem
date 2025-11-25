@@ -1,0 +1,411 @@
+[2025-11-24T22:42:24.525Z] [main] INFO: starting, NODE_ENV=undefined
+[2025-11-24T22:42:24.571Z] [main] INFO: app is ready
+[2025-11-24T22:42:24.576Z] [Python] INFO: Starting core server at /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/python-core/main.py
+[2025-11-24T22:42:25.710Z] [PythonCore] ERROR: INFO:     Started server process [19360]
+INFO:     Waiting for application startup.
+[2025-11-24T22:42:25.710Z] [PythonCore] ERROR: INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-11-24T22:42:26.599Z] [PythonCore] INFO: INFO:     127.0.0.1:55829 - "GET /health HTTP/1.1" 200 OK
+[2025-11-24T22:42:26.601Z] [Python] INFO: Core server healthy
+[2025-11-24T22:42:26.662Z] [main] INFO: daily cleanup scheduled
+[2025-11-24T22:42:26.823Z] [PythonCore] INFO: INFO:     127.0.0.1:55837 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T22:42:26.824Z] [PythonCore] INFO: INFO:     127.0.0.1:55838 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T22:42:26.834Z] [PythonCore] INFO: INFO:     127.0.0.1:55839 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T22:42:26.834Z] [PythonCore] INFO: INFO:     127.0.0.1:55840 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T22:42:28.370Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:42:32.981Z] [INFO] Launching Chrome with profile /Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone on CDP port 8111
+[2025-11-24T22:42:32.981Z] [INFO] Chrome launched with pid 19377 on port 8111
+[2025-11-24T22:42:33.552Z] [INFO] [chrome] spawned browser for CDP | userDataDir=/Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone profileDirectory=Default port=8111
+[2025-11-24T22:42:33.594Z] [INFO] [chrome] connected to CDP | endpoint=http://127.0.0.1:8111 userDataDir=/Users/lemaster/Library/Application Support/Google/Chrome profileDirectory=Profile 6
+[2025-11-24T22:42:32.967Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:42:36.663Z] [Cleanup] INFO: Starting cleanup via Python...
+[2025-11-24T22:42:36.672Z] [PythonCore] INFO: INFO:     127.0.0.1:55854 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T22:42:36.679Z] [PythonCore] INFO: INFO:     127.0.0.1:55855 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T22:42:36.683Z] [PythonCore] INFO: INFO:     127.0.0.1:55856 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T22:42:36.683Z] [Cleanup] INFO: Cleanup tasks completed via Python
+[2025-11-24T22:43:06.154Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:43:17.906Z] [STEP] Download state: OpenFirstCard
+[2025-11-24T22:43:17.906Z] [STEP] Opening first card
+[2025-11-24T22:43:17.907Z] [STEP] Download state: OpenFirstCard
+[2025-11-24T22:43:17.907Z] [STEP] Opening first card
+[2025-11-24T22:43:17.981Z] [ERROR] Failed to open first card | net::ERR_ABORTED at https://sora.chatgpt.com/d/gen_01kam850bdf67rkv8pt14mcv53
+Error: net::ERR_ABORTED at https://sora.chatgpt.com/d/gen_01kam850bdf67rkv8pt14mcv53
+    at navigate (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:184:27)
+    at async Deferred.race (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:36:20)
+    at async CdpFrame.goto (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:150:25)
+    at async CdpPage.goto (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:569:20)
+    at async openFirstCard (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:79:5)
+    at async runDownloadLoop (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:162:9)
+    at async runDownloads (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:273:28)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T22:43:21.478Z] [STEP] Download state: WaitCardReady
+[2025-11-24T22:43:21.735Z] [STEP] Открыта карточка №1
+[2025-11-24T22:43:21.736Z] [STEP] Download state: StartDownload
+[2025-11-24T22:43:21.737Z] [STEP] Клик по кнопке скачки
+[2025-11-24T22:43:22.137Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T22:43:26.373Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T22:43:26.375Z] [STEP] Файл скачан: 20251124_2343_01kam850bdf67rkv8pt14mcv53.mp4, размер=8751376 bytes, время=4638 ms
+[2025-11-24T22:43:26.375Z] [STEP] Download state: SwipeNext
+[2025-11-24T22:43:26.377Z] [downloader] INFO: [Feed] Scroll attempt 1
+[2025-11-24T22:43:34.465Z] [downloader] INFO: [Feed] Scroll attempt 2
+[2025-11-24T22:43:38.983Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=0
+[2025-11-24T22:43:42.555Z] [downloader] INFO: [Feed] Fallback scrollBy engaged
+[2025-11-24T22:43:44.010Z] [ERROR] Download loop iteration failed | Не удалось перейти к следующей карточке
+Error: Не удалось перейти к следующей карточке
+    at swipeNext (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:282:27)
+    at async runDownloadLoop (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:210:13)
+    at async runDownloads (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:273:28)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T22:43:44.011Z] [STEP] Download state: SwipeNext
+[2025-11-24T22:43:44.009Z] [downloader] INFO: [Feed] Failed to move to next card before timeout
+[2025-11-24T22:43:44.013Z] [downloader] INFO: [Feed] Scroll attempt 1
+[2025-11-24T22:43:52.101Z] [ERROR] Failed to swipe after download error | Attempted to use detached Frame 'AFA0DEA8DB13BAF0739CD1EBED1A4EE5'.
+Error: Attempted to use detached Frame 'AFA0DEA8DB13BAF0739CD1EBED1A4EE5'.
+    at CdpFrame.<anonymous> (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:102:23)
+    at CdpPage.evaluate (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:807:43)
+    at wheel (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:130:24)
+    at async longSwipeOnce (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:137:9)
+    at async scrollToNextCardInFeed (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:193:9)
+    at async swipeNext (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:280:31)
+    at async runDownloadLoop (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:217:17)
+    at async runDownloads (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:273:28)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T22:43:52.100Z] [downloader] INFO: [Feed] Scroll attempt 2
+[2025-11-24T22:44:14.210Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=0
+[2025-11-24T22:44:17.262Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T22:44:31.074Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:44:42.263Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:45:02.222Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T22:45:02.222Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T22:45:02.224Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:45:14.318Z] [ERROR] Workflow step failed: Prompts (test) | Protocol error (Page.navigate): Session closed. Most likely the page has been closed.
+Error: Protocol error (Page.navigate): Session closed. Most likely the page has been closed.
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:60:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:278:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:221:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T22:45:14.318Z] [Pipeline] INFO: [workflow] Prompts (test): Protocol error (Page.navigate): Session closed. Most likely the page has been closed.
+[2025-11-24T22:48:07.368Z] [main] INFO: starting, NODE_ENV=undefined
+[2025-11-24T22:48:07.439Z] [main] INFO: app is ready
+[2025-11-24T22:48:07.447Z] [Python] INFO: Starting core server at /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/python-core/main.py
+[2025-11-24T22:48:07.789Z] [PythonCore] ERROR: INFO:     Started server process [19663]
+INFO:     Waiting for application startup.
+[2025-11-24T22:48:07.789Z] [PythonCore] ERROR: INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-11-24T22:48:08.463Z] [PythonCore] INFO: INFO:     127.0.0.1:55923 - "GET /health HTTP/1.1" 200 OK
+[2025-11-24T22:48:08.466Z] [Python] INFO: Core server healthy
+[2025-11-24T22:48:08.555Z] [main] INFO: daily cleanup scheduled
+[2025-11-24T22:48:08.802Z] [PythonCore] INFO: INFO:     127.0.0.1:55931 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T22:48:08.802Z] [PythonCore] INFO: INFO:     127.0.0.1:55932 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T22:48:08.814Z] [PythonCore] INFO: INFO:     127.0.0.1:55933 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T22:48:08.814Z] [PythonCore] INFO: INFO:     127.0.0.1:55934 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T22:48:10.345Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:48:12.427Z] [INFO] Launching Chrome with profile /Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone on CDP port 8111
+[2025-11-24T22:48:12.427Z] [INFO] Chrome launched with pid 19686 on port 8111
+[2025-11-24T22:48:12.891Z] [INFO] [chrome] spawned browser for CDP | userDataDir=/Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone profileDirectory=Default port=8111
+[2025-11-24T22:48:12.905Z] [INFO] [chrome] connected to CDP | endpoint=http://127.0.0.1:8111 userDataDir=/Users/lemaster/Library/Application Support/Google/Chrome profileDirectory=Profile 6
+[2025-11-24T22:48:12.414Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:48:18.560Z] [Cleanup] INFO: Starting cleanup via Python...
+[2025-11-24T22:48:18.564Z] [PythonCore] INFO: INFO:     127.0.0.1:55950 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T22:48:18.573Z] [PythonCore] INFO: INFO:     127.0.0.1:55951 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T22:48:18.580Z] [PythonCore] INFO: INFO:     127.0.0.1:55952 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T22:48:18.582Z] [Cleanup] INFO: Cleanup tasks completed via Python
+[2025-11-24T22:48:18.764Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T22:48:20.271Z] [PythonCore] INFO: INFO:     127.0.0.1:55954 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T22:48:20.272Z] [PythonCore] INFO: INFO:     127.0.0.1:55953 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T22:48:20.277Z] [PythonCore] INFO: INFO:     127.0.0.1:55955 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T22:48:20.278Z] [PythonCore] INFO: INFO:     127.0.0.1:55956 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T22:48:26.881Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:48:30.558Z] [STEP] Download state: OpenFirstCard
+[2025-11-24T22:48:30.558Z] [STEP] Opening first card
+[2025-11-24T22:48:34.361Z] [STEP] Download state: WaitCardReady
+[2025-11-24T22:48:34.620Z] [STEP] Открыта карточка №1
+[2025-11-24T22:48:34.621Z] [STEP] Download state: StartDownload
+[2025-11-24T22:48:34.622Z] [STEP] Клик по кнопке скачки
+[2025-11-24T22:48:35.025Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T22:48:35.328Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T22:48:35.330Z] [STEP] Файл скачан: 20251124_2348_01kam850bdf67rkv8pt14mcv53.mp4, размер=8751376 bytes, время=708 ms
+[2025-11-24T22:48:35.331Z] [STEP] Download state: SwipeNext
+[2025-11-24T22:48:35.333Z] [downloader] INFO: [Feed] Scroll attempt 1
+[2025-11-24T22:48:45.219Z] [downloader] INFO: [Feed] Scroll attempt 2
+[2025-11-24T22:48:47.721Z] [STEP] Download state: WaitCardReady
+[2025-11-24T22:48:46.737Z] [downloader] INFO: [Feed] Moved to card index -1 (no-label) from -1
+[2025-11-24T22:48:47.981Z] [STEP] Открыта карточка №2
+[2025-11-24T22:48:47.981Z] [STEP] Download state: StartDownload
+[2025-11-24T22:48:47.981Z] [STEP] Клик по кнопке скачки
+[2025-11-24T22:48:48.352Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T22:49:11.201Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:49:16.096Z] [INFO] Launching Chrome with profile /Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone on CDP port 8111
+[2025-11-24T22:49:16.097Z] [INFO] Chrome launched with pid 19750 on port 8111
+[2025-11-24T22:49:16.083Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:49:17.466Z] [INFO] [chrome] spawned browser for CDP | userDataDir=/Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone profileDirectory=Default port=8111
+[2025-11-24T22:49:17.469Z] [INFO] [chrome] connected to CDP | endpoint=http://127.0.0.1:8111 userDataDir=/Users/lemaster/Library/Application Support/Google/Chrome profileDirectory=Profile 6
+[2025-11-24T22:49:18.440Z] [ERROR] Download loop iteration failed | Download did not start before timeout
+Error: Download did not start before timeout
+    at waitForDownloadStart (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:35:11)
+    at async runDownloadLoop (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:191:33)
+    at async runDownloads (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:281:28)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T22:49:18.440Z] [STEP] Download state: SwipeNext
+[2025-11-24T22:49:18.441Z] [ERROR] Failed to swipe after download error | Attempted to use detached Frame 'AD99896C5932C1FC4E547103976B27AD'.
+Error: Attempted to use detached Frame 'AD99896C5932C1FC4E547103976B27AD'.
+    at CdpFrame.<anonymous> (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:102:23)
+    at CdpPage.evaluate (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:807:43)
+    at getCurrentCardMeta (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:85:17)
+    at scrollToNextCardInFeed (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:166:29)
+    at swipeNext (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:288:37)
+    at runDownloadLoop (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/download/downloadFlow.js:217:23)
+    at async runDownloads (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/downloader.js:281:28)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T22:49:33.740Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T22:49:33.740Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T22:49:33.743Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T22:49:43.180Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T22:49:48.117Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T22:50:05.643Z] [ERROR] Workflow step failed: Prompts (test) | Waiting for selector `textarea[data-testid='prompt-input']` failed: Protocol error (Runtime.callFunctionOn): Target closed
+Error: Waiting for selector `textarea[data-testid='prompt-input']` failed: Protocol error (Runtime.callFunctionOn): Target closed
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:60:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:278:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:221:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:133:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T23:06:19.622Z] [main] INFO: starting, NODE_ENV=undefined
+[2025-11-24T23:06:19.693Z] [main] INFO: app is ready
+[2025-11-24T23:06:19.706Z] [Python] INFO: Starting core server at /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/python-core/main.py
+[2025-11-24T23:06:20.038Z] [PythonCore] ERROR: INFO:     Started server process [20491]
+INFO:     Waiting for application startup.
+[2025-11-24T23:06:20.038Z] [PythonCore] ERROR: INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-11-24T23:06:20.730Z] [PythonCore] INFO: INFO:     127.0.0.1:56065 - "GET /health HTTP/1.1" 200 OK
+[2025-11-24T23:06:20.733Z] [Python] INFO: Core server healthy
+[2025-11-24T23:06:20.824Z] [main] INFO: daily cleanup scheduled
+[2025-11-24T23:06:21.043Z] [PythonCore] INFO: INFO:     127.0.0.1:56073 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T23:06:21.043Z] [PythonCore] INFO: INFO:     127.0.0.1:56074 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T23:06:21.055Z] [PythonCore] INFO: INFO:     127.0.0.1:56076 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T23:06:21.055Z] [PythonCore] INFO: INFO:     127.0.0.1:56075 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T23:06:28.183Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:06:30.641Z] [INFO] Launching Chrome with profile /Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone on CDP port 8111
+[2025-11-24T23:06:30.641Z] [INFO] Chrome launched with pid 20508 on port 8111
+[2025-11-24T23:06:30.625Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:06:30.830Z] [Cleanup] INFO: Starting cleanup via Python...
+[2025-11-24T23:06:30.840Z] [PythonCore] INFO: INFO:     127.0.0.1:56081 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T23:06:30.846Z] [PythonCore] INFO: INFO:     127.0.0.1:56082 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T23:06:30.850Z] [PythonCore] INFO: INFO:     127.0.0.1:56083 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T23:06:30.850Z] [Cleanup] INFO: Cleanup tasks completed via Python
+[2025-11-24T23:06:32.003Z] [INFO] [chrome] spawned browser for CDP | userDataDir=/Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone profileDirectory=Default port=8111
+[2025-11-24T23:06:32.040Z] [INFO] [chrome] connected to CDP | endpoint=http://127.0.0.1:8111 userDataDir=/Users/lemaster/Library/Application Support/Google/Chrome profileDirectory=Profile 6
+[2025-11-24T23:06:36.861Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:06:44.738Z] [STEP] Download state: OpenFirstCard
+[2025-11-24T23:06:44.738Z] [STEP] Opening first card via click
+[2025-11-24T23:06:45.211Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:06:45.469Z] [STEP] Открыта карточка №1
+[2025-11-24T23:06:45.469Z] [STEP] Download state: StartDownload
+[2025-11-24T23:06:45.470Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:06:45.842Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:06:46.144Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:06:46.145Z] [STEP] Файл скачан: 20251125_0006_01kam850bdf67rkv8pt14mcv53.mp4, размер=8751376 bytes, время=675 ms
+[2025-11-24T23:06:46.145Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:06:46.147Z] [downloader] INFO: [Feed] Scroll attempt 1
+[2025-11-24T23:06:47.764Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:06:48.023Z] [STEP] Открыта карточка №2
+[2025-11-24T23:06:48.024Z] [STEP] Download state: StartDownload
+[2025-11-24T23:06:48.024Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:06:48.395Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:06:47.754Z] [downloader] INFO: [Feed] Moved to card index 2 (no-label) from 0
+[2025-11-24T23:06:56.232Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:06:56.233Z] [STEP] Файл скачан: 20251125_0006_01kam7zxeze4xr6xa79svxgx89.mp4, размер=7887611 bytes, время=8209 ms
+[2025-11-24T23:06:56.233Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:06:56.236Z] [downloader] INFO: [Feed] Scroll attempt 1
+[2025-11-24T23:06:57.837Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:06:58.095Z] [STEP] Открыта карточка №3
+[2025-11-24T23:06:58.095Z] [STEP] Download state: StartDownload
+[2025-11-24T23:06:58.096Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:06:58.464Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:06:57.829Z] [downloader] INFO: [Feed] Moved to card index 4 (no-label) from 2
+[2025-11-24T23:07:02.984Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:07:02.985Z] [STEP] Файл скачан: 20251125_0006_01kam7sdqhfpts8s2h9a389xs8.mp4, размер=6871915 bytes, время=4889 ms
+[2025-11-24T23:07:02.985Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:07:02.986Z] [downloader] INFO: [Feed] Scroll attempt 1
+[2025-11-24T23:07:04.579Z] [downloader] INFO: [Feed] Moved to card index 6 (no-label) from 4
+[2025-11-24T23:07:04.585Z] [downloader] INFO: [Feed] Downloaded 1 videos for session test
+[2025-11-24T23:07:04.587Z] [downloader] INFO: [Feed] Downloaded 2 videos for session test
+[2025-11-24T23:07:04.588Z] [downloader] INFO: [Feed] Downloaded 3 videos for session test
+[2025-11-24T23:07:08.325Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T23:07:32.707Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T23:07:41.041Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:07:41.952Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:08:51.144Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:09:08.708Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T23:09:08.709Z] [ERROR] Workflow step failed: Prompts (test) | No prompts found in file
+Error: No prompts found in file
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:64:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:276:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:228:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:134:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T23:09:08.708Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T23:09:08.709Z] [Pipeline] INFO: [workflow] Prompts (test): No prompts found in file
+[2025-11-24T23:09:16.206Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T23:09:19.548Z] [profileFiles] INFO: Opened profile folder for scrooge3: /Users/lemaster/Library/Application Support/Electron/sessions/prompts
+[2025-11-24T23:15:11.407Z] [main] INFO: starting, NODE_ENV=undefined
+[2025-11-24T23:15:11.441Z] [main] INFO: app is ready
+[2025-11-24T23:15:11.448Z] [Python] INFO: Starting core server at /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/python-core/main.py
+[2025-11-24T23:15:11.775Z] [PythonCore] ERROR: INFO:     Started server process [20779]
+INFO:     Waiting for application startup.
+[2025-11-24T23:15:11.775Z] [PythonCore] ERROR: INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-11-24T23:15:12.473Z] [PythonCore] INFO: INFO:     127.0.0.1:56148 - "GET /health HTTP/1.1" 200 OK
+[2025-11-24T23:15:12.478Z] [Python] INFO: Core server healthy
+[2025-11-24T23:15:12.536Z] [main] INFO: daily cleanup scheduled
+[2025-11-24T23:15:12.665Z] [PythonCore] INFO: INFO:     127.0.0.1:56157 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T23:15:12.665Z] [PythonCore] INFO: INFO:     127.0.0.1:56156 - "GET /analytics/stats?days=14 HTTP/1.1" 200 OK
+[2025-11-24T23:15:12.679Z] [PythonCore] INFO: INFO:     127.0.0.1:56158 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56159 - "GET /analytics/top-sessions?limit=5 HTTP/1.1" 200 OK
+[2025-11-24T23:15:14.448Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:15:17.622Z] [INFO] Launching Chrome with profile /Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone on CDP port 8111
+[2025-11-24T23:15:17.622Z] [INFO] Chrome launched with pid 20794 on port 8111
+[2025-11-24T23:15:17.608Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:15:18.992Z] [INFO] [chrome] spawned browser for CDP | userDataDir=/Users/lemaster/Library/Application Support/Electron/sessions/chrome-clones/profile-6-sora-clone profileDirectory=Default port=8111
+[2025-11-24T23:15:19.003Z] [INFO] [chrome] connected to CDP | endpoint=http://127.0.0.1:8111 userDataDir=/Users/lemaster/Library/Application Support/Google/Chrome profileDirectory=Profile 6
+[2025-11-24T23:15:22.542Z] [Cleanup] INFO: Starting cleanup via Python...
+[2025-11-24T23:15:22.554Z] [PythonCore] INFO: INFO:     127.0.0.1:56175 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T23:15:22.558Z] [PythonCore] INFO: INFO:     127.0.0.1:56176 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T23:15:22.561Z] [PythonCore] INFO: INFO:     127.0.0.1:56177 - "POST /files/cleanup HTTP/1.1" 200 OK
+[2025-11-24T23:15:22.561Z] [Cleanup] INFO: Cleanup tasks completed via Python
+[2025-11-24T23:15:24.870Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:15:30.248Z] [STEP] Download state: OpenFirstCard
+[2025-11-24T23:15:30.249Z] [STEP] Opening first card via click
+[2025-11-24T23:15:30.777Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:15:31.031Z] [STEP] Открыта карточка №1
+[2025-11-24T23:15:31.032Z] [STEP] Download state: StartDownload
+[2025-11-24T23:15:31.032Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:15:31.428Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:15:31.732Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:15:31.733Z] [STEP] Файл скачан: 20251125_0015_01kam850bdf67rkv8pt14mcv53.mp4, размер=8751376 bytes, время=701 ms
+[2025-11-24T23:15:31.733Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:15:32.874Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:15:32.072Z] [downloader] INFO: [Feed] Moved to index 1 (prev: 0)
+[2025-11-24T23:15:33.138Z] [STEP] Открыта карточка №2
+[2025-11-24T23:15:33.139Z] [STEP] Download state: StartDownload
+[2025-11-24T23:15:33.139Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:15:33.515Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:15:33.822Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:15:33.823Z] [STEP] Файл скачан: 20251125_0015_01kam850eme1zsm6h9htc4h8wf.mp4, размер=8936292 bytes, время=684 ms
+[2025-11-24T23:15:33.823Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:15:34.936Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:15:34.135Z] [downloader] INFO: [Feed] Moved to index 2 (prev: 1)
+[2025-11-24T23:15:35.194Z] [STEP] Открыта карточка №3
+[2025-11-24T23:15:35.195Z] [STEP] Download state: StartDownload
+[2025-11-24T23:15:35.196Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:15:35.558Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:15:35.865Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:15:35.866Z] [STEP] Файл скачан: 20251125_0015_01kam7zxeze4xr6xa79svxgx89.mp4, размер=7887611 bytes, время=669 ms
+[2025-11-24T23:15:35.866Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:15:37.011Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:15:36.206Z] [downloader] INFO: [Feed] Moved to index 3 (prev: 2)
+[2025-11-24T23:15:37.276Z] [STEP] Открыта карточка №4
+[2025-11-24T23:15:37.277Z] [STEP] Download state: StartDownload
+[2025-11-24T23:15:37.277Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:15:37.658Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:15:37.963Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:15:37.963Z] [STEP] Файл скачан: 20251125_0015_01kam7z5j1f7gv2e5yap2tk0cw.mp4, размер=4971243 bytes, время=685 ms
+[2025-11-24T23:15:37.964Z] [STEP] Download state: SwipeNext
+[2025-11-24T23:15:39.074Z] [STEP] Download state: WaitCardReady
+[2025-11-24T23:15:38.268Z] [downloader] INFO: [Feed] Moved to index 4 (prev: 3)
+[2025-11-24T23:15:39.335Z] [STEP] Открыта карточка №5
+[2025-11-24T23:15:39.336Z] [STEP] Download state: StartDownload
+[2025-11-24T23:15:39.337Z] [STEP] Клик по кнопке скачки
+[2025-11-24T23:15:39.709Z] [STEP] Download state: WaitDownloadStart
+[2025-11-24T23:15:40.015Z] [STEP] Download state: WaitFileSaved
+[2025-11-24T23:15:40.016Z] [STEP] Файл скачан: 20251125_0015_01kam7sdqhfpts8s2h9a389xs8.mp4, размер=6871915 bytes, время=679 ms
+[2025-11-24T23:15:40.016Z] [STEP] Download state: Done
+[2025-11-24T23:15:40.018Z] [downloader] INFO: [Feed] Downloaded 1 videos for session test
+[2025-11-24T23:15:40.020Z] [downloader] INFO: [Feed] Downloaded 2 videos for session test
+[2025-11-24T23:15:40.020Z] [downloader] INFO: [Feed] Downloaded 3 videos for session test
+[2025-11-24T23:15:40.021Z] [downloader] INFO: [Feed] Downloaded 4 videos for session test
+[2025-11-24T23:15:40.022Z] [downloader] INFO: [Feed] Downloaded 5 videos for session test
+[2025-11-24T23:15:46.065Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:15:52.494Z] [STEP] Download state: OpenFirstCard
+[2025-11-24T23:15:52.494Z] [STEP] Opening first card via click
+[2025-11-24T23:16:09.400Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=0, images=1
+[2025-11-24T23:16:13.304Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:14.550Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:16.515Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:18.411Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:18.451Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:19.300Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:20.484Z] [profileFiles] INFO: Saved files for profile scrooge3
+[2025-11-24T23:16:39.175Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T23:16:39.178Z] [ERROR] Workflow step failed: Prompts (test) | No prompts found in file
+Error: No prompts found in file
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:64:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:276:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:228:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:134:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T23:16:39.175Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T23:16:39.178Z] [Pipeline] INFO: [workflow] Prompts (test): No prompts found in file
+[2025-11-24T23:17:46.969Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T23:17:46.971Z] [ERROR] Workflow step failed: Prompts (test) | No prompts found in file
+Error: No prompts found in file
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:64:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:276:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:228:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:134:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T23:17:46.968Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T23:17:46.971Z] [Pipeline] INFO: [workflow] Prompts (test): No prompts found in file
+[2025-11-24T23:17:50.113Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=1, images=0
+[2025-11-24T23:18:13.236Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T23:18:13.239Z] [ERROR] Workflow step failed: Prompts (test) | No prompts found in file
+Error: No prompts found in file
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:64:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:276:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:228:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:134:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T23:18:13.236Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T23:18:13.239Z] [Pipeline] INFO: [workflow] Prompts (test): No prompts found in file
+[2025-11-24T23:19:05.814Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=1, images=0
+[2025-11-24T23:19:08.434Z] [profileFiles] INFO: Opened profile folder for scrooge3: /Users/lemaster/Library/Application Support/Electron/sessions/prompts
+[2025-11-24T23:21:51.811Z] [main] INFO: starting, NODE_ENV=undefined
+[2025-11-24T23:21:51.867Z] [main] INFO: app is ready
+[2025-11-24T23:21:51.875Z] [Python] INFO: Starting core server at /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/python-core/main.py
+[2025-11-24T23:21:51.883Z] [Python] INFO: Core server healthy
+[2025-11-24T23:21:51.973Z] [main] INFO: daily cleanup scheduled
+[2025-11-24T23:21:52.254Z] [PythonCore] ERROR: INFO:     Started server process [21053]
+INFO:     Waiting for application startup.
+[2025-11-24T23:21:52.254Z] [PythonCore] ERROR: INFO:     Application startup complete.
+[2025-11-24T23:21:52.254Z] [PythonCore] ERROR: ERROR:    [Errno 48] error while attempting to bind on address ('127.0.0.1', 8000): address already in use
+INFO:     Waiting for application shutdown.
+[2025-11-24T23:21:52.254Z] [PythonCore] ERROR: INFO:     Application shutdown complete.
+[2025-11-24T23:21:52.284Z] [Python] INFO: Core server exited with code 1
+[2025-11-24T23:21:56.194Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:21:58.791Z] [INFO] [chrome] connected to CDP | endpoint=http://127.0.0.1:8111 userDataDir=/Users/lemaster/Library/Application Support/Google/Chrome profileDirectory=Profile 6
+[2025-11-24T23:21:58.766Z] [chromeProfiles] INFO: Found 14 profiles from system scan
+[2025-11-24T23:22:01.976Z] [Cleanup] INFO: Starting cleanup via Python...
+[2025-11-24T23:22:01.982Z] [Cleanup] INFO: Cleanup tasks completed via Python
+[2025-11-24T23:22:19.535Z] [profileFiles] INFO: Loaded files for profile scrooge3: prompts=1, titles=1, images=0
+[2025-11-24T23:22:28.623Z] [STEP] Workflow step start: Prompts (test)
+[2025-11-24T23:22:28.625Z] [ERROR] Workflow step failed: Prompts (test) | No prompts found in file
+Error: No prompts found in file
+    at runPromptsForSession (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:64:15)
+    at async runWorkflow (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/core/workflow/workflow.js:47:28)
+    at async runPipeline (/Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/automation/pipeline.js:276:25)
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:236:5
+    at async /Users/lemaster/PycharmProjects/PythonProject4/sora_2.1/dist-electron/electron/main.js:134:20
+    at async WebContents.<anonymous> (node:electron/js2c/browser_init:2:77963)
+[2025-11-24T23:22:28.623Z] [Pipeline] INFO: [workflow] Prompts (test): Starting
+[2025-11-24T23:22:28.625Z] [Pipeline] INFO: [workflow] Prompts (test): No prompts found in file
